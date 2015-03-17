@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
+#    Author: Joel Grand-Guillaume
 #    Copyright 2012 Camptocamp SA
-#    Copyright 2012 Endian Solutions BV
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,27 +18,23 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{'name': 'Product Cost field',
- 'version': '0.1',
- 'author': 'Grishma Shukla',
- 'maintainer': 'Endian Solutions',
- 'category': 'Products',
- 'complexity': "normal",
- 'depends': ['product_cost_incl_bom',
-             ],
+{'name': 'Product Historial Margin Report',
+ 'version': '1.0',
+ 'author': "Camptocamp,Odoo Community Association (OCA)",
+ 'maintainer': 'Camptocamp',
+ 'category': 'Sales Management',
+ 'complexity': "normal",  # easy, normal, expert
+ 'depends': ['product_historical_margin', 'account'],
  'description': """
- This module adds an Fixed cost field to the product form. So you can calculate
- a costprice with added costs.
-
- This module depends on the module product_cost_incl_bom. If the is a BoM, the
- added costs are added to the calculated cost price of the BoM.
- """,
- 'website': 'www.endiansolutions.nl',
+  This module provide the margin infos in the invoice line analysis.
+  """,
+ 'website': 'http://www.camptocamp.com/',
  'init_xml': [],
- 'update_xml': ['product_view.xml'],
+ 'update_xml': ['product_historical_margin_report_view.xml'],
  'demo_xml': [],
  'tests': [],
  'installable': False,
+ 'auto_install': False,
  'license': 'AGPL-3',
- 'application': False
+ 'application': True
  }

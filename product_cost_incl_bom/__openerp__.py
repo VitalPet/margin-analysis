@@ -18,9 +18,9 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{'name': 'Product Cost incl. BOM',
- 'version': '1.0',
- 'author': 'Camptocamp',
+{'name': 'Replenishment Cost incl. BOM',
+ 'version': '1.1',
+ 'author': "Camptocamp,Odoo Community Association (OCA)",
  'maintainer': 'Camptocamp',
  'category': 'Products',
  'complexity': "normal",  # easy, normal, expert
@@ -28,14 +28,14 @@
              'mrp',
              ],
  'description': """
-Product Cost including BOM costs
-================================
+Replenishment Cost including BOM costs
+======================================
 
-Compute product cost price by recursively summing parts cost prices according
-to product BOM. It takes into account the BoM costing (cost per cycle and
-so...). If no BOM define for a product, the cost_price is always equal to the
-standard_price field of the product, so we always have a value to base our
-reporting on.
+Compute product's Replenishment cost by recursively summing the Replenishment
+costs of the parts according to product BOM. It takes into account the BoM
+costing (cost per cycle and so...). If no BOM define for a product,
+the Replenishment cost is always equal to the Cost price of the product,
+so we always have a value to base our reporting on.
 
 The computed value is stored in the DB and can be used in 3rd party report.
 
