@@ -20,7 +20,7 @@
 ##############################################################################
 {'name' : 'Product Cost field',
  'version' : '0.1',
- 'author' : 'Grishma Shukla',
+ 'author' : "Grishma Shukla,Odoo Community Association (OCA)",
  'maintainer': 'Endian Solutions',
  'category': 'Products',
  'complexity': "normal",  
@@ -30,6 +30,7 @@
  This module adds an Fixed cost field to the product form. So you can calculate a costprice with added costs, without the use of a BoM.
  """,
  'website': 'www.endiansolutions.nl',
+ 'license': 'AGPL-3',
  'init_xml': [],
  'update_xml': ['product_view.xml'],
  'demo_xml': [],

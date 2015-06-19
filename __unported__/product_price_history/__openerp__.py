@@ -23,7 +23,8 @@
 {
     "name" : "Product Price History",
     "version" : "1.2.2",
-    "author" : "Camptocamp",
+    "author" : "Camptocamp,Odoo Community Association (OCA)",
+    "license": "AGPL-3",
     "category" : "Generic Modules/Inventory Control",
     "depends" : ["product",
                  "purchase",
